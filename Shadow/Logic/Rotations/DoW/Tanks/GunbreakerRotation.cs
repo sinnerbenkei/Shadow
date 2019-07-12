@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,8 +35,7 @@ namespace ShadowCR.Rotations
                 if (await Actions.SolidBarrel()) return true;
                 if (await Actions.BrutalShell()) return true;
                 if (await Actions.DangerZone()) return true;
-                if (await Actions.KeenEdge()) return true;
-                return await Actions.LightningShot();
+                return await Actions.KeenEdge();
             }
             if (Shadow.Settings.RotationMode == Modes.Single)
             {
@@ -54,16 +53,14 @@ namespace ShadowCR.Rotations
                 if (await Actions.SolidBarrel()) return true;
                 if (await Actions.BrutalShell()) return true;
                 if (await Actions.DangerZone()) return true;
-                if (await Actions.KeenEdge()) return true;
-                return await Actions.LightningShot();
+                return await Actions.KeenEdge();
             }
             if (Shadow.Settings.RotationMode == Modes.Multi)
             {
                 if (await Actions.BowShock()) return true;
                 if (await Actions.DemonSlaughter()) return true;
                 if (await Actions.DemonSlice()) return true;
-                if (await Actions.KeenEdge()) return true;
-                return await Actions.LightningShot();
+                return await Actions.KeenEdge();
             }
             return false;
         }
@@ -77,7 +74,6 @@ namespace ShadowCR.Rotations
             if (await Shadow.SummonChocobo()) return true;
             if (await Shadow.ChocoboStance()) return true;
             //if (await Actions.Superbolide()) return true;
-            if (await Actions.RoyalGuard()) return true;
             //if (await Actions.Camouflage()) return true;
             //if (await Actions.Nebula()) return true;
             //if (await Actions.HeartOfLight()) return true;
@@ -88,7 +84,7 @@ namespace ShadowCR.Rotations
             if (await Actions.Awareness()) return true;
             if (await Actions.Reprisal()) return true;
             //if (await Actions.Aurora()) return true;
-            return await Actions.NoMercy();
+            return await Actions.RoyalGuard();
         }
 
         #endregion
