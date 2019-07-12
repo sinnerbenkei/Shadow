@@ -84,7 +84,7 @@ namespace ShadowCR.Rotations
             if (await Actions.Awareness()) return true;
             if (await Actions.Reprisal()) return true;
             //if (await Actions.Aurora()) return true;
-            return await Actions.RoyalGuard();
+            return await Actions.NoMercy();
         }
 
         #endregion
